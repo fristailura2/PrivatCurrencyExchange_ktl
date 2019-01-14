@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/layout_nbu_item_bank_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ПриватБанк" />
+
+    <com.example.ura.myapplication.presentation.base.UnderlinedTextView
+        android:id="@+id/layout_nbu_item_date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="01.0.1.2015" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/layout_nbu_item_date_picker_button_appCompatButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_date_picker"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_nbu_item_date_textView"
+        app:layout_constraintEnd_toStartOf="@+id/layout_nbu_item_date_textView"
+        app:layout_constraintTop_toTopOf="@+id/layout_nbu_item_date_textView" />
+
+</android.support.constraint.ConstraintLayout>

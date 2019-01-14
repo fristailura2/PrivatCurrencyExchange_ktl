@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Курсы валют</string>
+    <string name="loading_title">Loading data from private api</string>
+    <string name="loading_text">Loading. Please wait...</string>
+    <string name="to">До</string>
+    <string name="from">С</string>
+    <string name="nbu">НБУ</string>
+    <string name="privat">ПриватБанк</string>
+    <string name="sale">Продажа</string>
+    <string name="buy">Покупка</string>
+    <string name="currency">Валюта</string>
+</resources>

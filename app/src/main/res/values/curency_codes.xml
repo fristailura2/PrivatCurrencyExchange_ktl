@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="key_val_currency_code">
+        <item>USD,доллары США</item>
+        <item>EUR,ЕВРО</item>
+        <item>RUB,российские рубли</item>
+        <item>AUD,австралийские доллары</item>
+        <item>AZN,азербайджанские манаты</item>
+        <item>BGN,болгарские левы</item>
+        <item>UAH,украинская гривна</item>
+        <item>PLZ,польский злотый</item>
+        <item>BYN,беларуские рубли</item>
+        <item>CAD,канадские доллары</item>
+        <item>CHF,швейцарские франки</item>
+        <item>CNY,юани Женьминьби (Китай)</item>
+        <item>CZK,чешские кроны</item>
+        <item>DKK,датские кроны</item>
+        <item>EGP,египетские фунты</item>
+        <item>GBP,английские фунты стерлингов</item>
+        <item>HKD,гонконгские доллары</item>
+        <item>HRK,хорватские куны</item>
+        <item>HUF,венгерские форинты</item>
+        <item>IDR,индонезийские рупии</item>
+        <item>ILS,израильские шекели</item>
+        <item>INR,индийские рупии</item>
+        <item>IRR,иранские реалы</item>
+        <item>JPY,японские иены</item>
+        <item>KRW,воны Республики Корея</item>
+        <item>KZT,казахские теньге</item>
+        <item>MDL,молдавские леи</item>
+        <item>MXN,мексиканские новые песо</item>
+        <item>NOK,норвежские кроны</item>
+        <item>NZD,новозеландские доллары</item>
+        <item>PLN,польские злотые</item>
+        <item>RON,новые румынские леи</item>
+        <item>SAR,риалы Саудовской Аравии</item>
+        <item>SEK,шведские кроны</item>
+        <item>SGD,сингапурские доллары</item>
+        <item>TRY,новые турецкие лиры</item>
+        <item>ZAR,южноафриканские рэнды</item>
+        <item>AED,дирхамы ОАЭ</item>
+        <item>AMD,армянские драмы</item>
+        <item>BDT,бангладешские таки</item>
+        <item>DZD,алжирские динары</item>
+        <item>GEL,грузинские лари</item>
+        <item>IQD,иракские динары</item>
+        <item>KGS,сомы Кыргызстана</item>
+        <item>LBP,ливанские фунты</item>
+        <item>LYD,ливийские динары</item>
+        <item>MAD,марокканские дирхамы</item>
+        <item>MYR,малайзийские ринггиты</item>
+        <item>PKR,пакистанские рупии</item>
+        <item>RSD,сербские динары</item>
+        <item>THB,таиландские баты</item>
+        <item>TJS,таджикские сомоны</item>
+        <item>TMT,новые туркменские манаты</item>
+        <item>TND,тунисские динары</item>
+        <item>TWD,новые тайванские доллары</item>
+        <item>UZS,сумы Узбекистана</item>
+        <item>VND,вьетнамские донги</item>
+    </string-array>
+</resources>

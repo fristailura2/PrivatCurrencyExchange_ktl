@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_root_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.main.MainActivity">
+
+        <fragment
+            tools:layout="@layout/fragment_privat"
+            android:id="@+id/activity_main_fragment_private"
+            android:name="com.example.ura.myapplication.presentation.main.privat.PrivatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"/>
+
+    <fragment
+        tools:layout="@layout/fragment_nbu"
+        android:id="@+id/activity_main_fragment_nbu"
+        android:name="com.example.ura.myapplication.presentation.main.nbu.NBUFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1" />
+
+    </LinearLayout>

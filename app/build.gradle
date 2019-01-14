@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+def localPropertiesFile = rootProject.file("local.properties")
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(localPropertiesFile))
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.ura.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            buildConfigField "String", "PRIVATE_API_BASE_URL", '"'+localProperties['privat_server.api_url']+'"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            buildConfigField "String", "PRIVATE_API_BASE_URL", '"'+localProperties['privat_server.api_url']+'"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+def room_version = "1.1.1"
+def support_version = "28.0.0"
+def dagger_version = "2.19"
+def retrofit_version = "2.5.0"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation group: 'com.google.dagger', name: 'dagger', version: dagger_version
+    implementation group: 'com.google.dagger', name: 'dagger-android-support', version: dagger_version
+    implementation group: 'com.google.dagger', name: 'dagger-android', version: dagger_version
+
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: dagger_version
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-android-processor', version: dagger_version
+    kapt group: 'com.google.dagger', name: 'dagger-compiler', version: dagger_version
+    kapt group: 'com.google.dagger', name: 'dagger-android-processor', version: dagger_version
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    kapt 'com.jakewharton:butterknife-compiler:9.0.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '3.12.0'
+
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.1.0'
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.4'
+
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
